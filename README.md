@@ -1,6 +1,6 @@
-# SquidGrip
+# Squidgrip
 
-SquidGrip is a clamp-on USB-UART probe for programming ESP32 boards. It is a CP2102N on a small
+Squidgrip is a clamp-on USB-UART probe for programming ESP32 boards. It is a CP2102N on a small
 USB-C board with a 6-pin pogo pin array on a thin tongue, plus a 3D printed clamp that presses that
 tongue onto the programming pads of a target board.
 
@@ -10,18 +10,18 @@ are RESET and BOOT buttons for doing it by hand, power/TX/RX LEDs, and a 3.3 V L
 power the board it is flashing.
 
 <p align="center">
-  <img src="docs/squidgrip.gif" width="60%" alt="SquidGrip in its clamp (3D render)">
+  <img src="docs/squidgrip.gif" width="60%" alt="squidgrip in its clamp (3D render)">
   <br>
-  <em>SquidGrip in the clamp (3D render)</em>
+  <em>squidgrip in the clamp (3D render)</em>
   <br><br>
   <img src="docs/squidgrip_copper_front.png" width="45%" alt="Front copper and silkscreen">
   <img src="docs/squidgrip_copper_rear.png" width="45%" alt="Rear copper and silkscreen">
   <br>
   <em>Copper and silkscreen: front and rear</em>
   <br><br>
-  <img src="docs/squidgrip_assembled_front.jpg" width="30%" alt="Assembled SquidGrip, front">
-  <img src="docs/squidgrip_assembled_side.jpg" width="30%" alt="Assembled SquidGrip, side">
-  <img src="docs/squidgrip_assembled_rear.jpg" width="30%" alt="Assembled SquidGrip, rear">
+  <img src="docs/squidgrip_assembled_front.jpg" width="30%" alt="Assembled squidgrip, front">
+  <img src="docs/squidgrip_assembled_side.jpg" width="30%" alt="Assembled squidgrip, side">
+  <img src="docs/squidgrip_assembled_rear.jpg" width="30%" alt="Assembled squidgrip, rear">
   <br>
   <em>Assembled: front, side and rear</em>
   <br><br>
@@ -137,7 +137,7 @@ work together out of the box.
 ## Configuring the CP2102N
 
 The CP2102N leaves the factory with a generic identity, so it needs a one-time configuration before
-the probe behaves like a SquidGrip. That configuration is in `firmware/`, and Silicon Labs' own tool
+the probe behaves like a squidgrip. That configuration is in `firmware/`, and Silicon Labs' own tool
 programs it.
 
 **Tool:** [Simplicity Studio](https://www.silabs.com/developers/simplicity-studio) with the
@@ -152,11 +152,11 @@ pins the exact part (`ffd.usbxpress.cp2102n.cp2102n_a02_gqfn24`).
 
 Steps:
 
-1. Install Simplicity Studio, then plug the SquidGrip into USB-C.
+1. Install Simplicity Studio, then plug the squidgrip into USB-C.
 2. Open the `firmware/` project, or make a new Xpress Configurator project and open its document file.
 3. Use **Import From Device** to read the chip's current configuration, then set the fields you want.
    The one that matters is the **Product String**, because that is the name your OS shows for the
-   port (set it to `SquidGrip`). The manufacturer string and serial number are also there.
+   port (set it to `squidgrip`). The manufacturer string and serial number are also there.
 4. Click **Program to Device**.
 5. Unplug and replug the probe. It comes up under the new name.
 
@@ -172,7 +172,7 @@ replug. And if the product string in `squidgrip.configuration` is still Silicon 
 
 ## Using it
 
-1. Plug the SquidGrip into USB. The blue PWR LED lights up and a serial port appears. The CP2102N
+1. Plug the squidgrip into USB. The blue PWR LED lights up and a serial port appears. The CP2102N
    needs no drivers on Windows 10 or newer, macOS and Linux.
 2. Line the tongue up with the pad array on the target board and close the clamp. The pogo pins point
    down from the underside of the tongue, so the target sits below it.
@@ -308,7 +308,7 @@ Fab options that match the layout:
 
 ## License
 
-SquidGrip is licensed under the CERN Open Hardware Licence Version 2 - Strongly Reciprocal
+squidgrip is licensed under the CERN Open Hardware Licence Version 2 - Strongly Reciprocal
 (CERN-OHL-S-2.0). The full licence text is in [`LICENSE`](LICENSE).
 
 ```

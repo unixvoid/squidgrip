@@ -3,7 +3,7 @@
 	(generator "pcbnew")
 	(generator_version "9.0")
 	(layer "F.Cu")
-	(descr "SquidGrip 6-pin pogo pin programming footprint. 2x03, 1.27 mm pitch, 1 mm pads with 0.54 mm holes. Pads 1-3 run down the left column and 4-6 up the right: 1 GND, 2 RST/EN, 3 VCC, 4 BOOT, 5 TX, 6 RX.")
+	(descr "Squidgrip 6-pin pogo pin programming footprint. 2x03, 1.27 mm pitch, 1 mm pads with 0.54 mm holes. Pads 1-3 run down the left column and 4-6 up the right: 1 GND, 2 RST/EN, 3 VCC, 4 BOOT, 5 TX, 6 RX.")
 	(tags "squidgrip pogo probe programming esp32 uart")
 	(property "Reference" "REF**"
 		(at -2.54 -2.4 0)
